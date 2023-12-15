@@ -16,9 +16,9 @@ const Clock = () => {
   }, []);
 
   const currentDate = new Date(currentTime);
-  const hours = currentDate.getHours().toString().padStart(2, "0");
-  const minutes = currentDate.getMinutes().toString().padStart(2, "0");
-  const seconds = currentDate.getSeconds().toString().padStart(2, "0");
+  const hours = currentDate.getHours();
+  const minutes = currentDate.getMinutes();
+  const seconds = currentDate.getSeconds();
 
   return (
     <div className="clock">
